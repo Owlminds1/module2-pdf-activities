@@ -2,7 +2,7 @@ import NavbarData from "@/lib/navigation/nav.json"
 import Link from "next/link";
 export default function Home() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-white p-5">
+    <div className="min-h-screen flex items-center justify-center bg-[url(/bg/bg_image.jpg)] bg-cover bg-center p-5">
       <div className="flex items-center justify-center gap-5">
       {
         NavbarData.map((item,index)=>(
