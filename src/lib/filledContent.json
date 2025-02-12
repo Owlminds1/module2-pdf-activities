@@ -1,0 +1,44 @@
+[{
+    "Behaviour":"Action/Behaviour",
+    "rating":"Rating"
+},
+    {
+        "Behaviour":"Imagine introducing myself to a stranger.",
+        "rating":"10"
+    },
+    {
+        "Behaviour":"Actually talk to a stranger and introduce yourself.",
+        "rating":"20"
+    },
+    {
+        "Behaviour":"Answer a question in front of a group",
+        "rating":"30"
+    },{
+        "Behaviour":"Imagine standing on the stage along with a group.",
+        "rating":"40"
+    },
+    {
+        "Behaviour":"Ask a question over the mic .",
+        "rating":"50"
+    },
+    {
+        "Behaviour":"Imagine standing on the stage alone.",
+        "rating":"60"
+    },
+    {
+        "Behaviour":"Greet an audience of fewer and familiar people (e.g. class) over mic .",
+        "rating":"70"
+    }
+    ,{
+        "Behaviour":"Answer yes/no questions over mic , in front of a mixed audience of familiar and unfamiliar people.",
+        "rating":"80"
+    },
+    {
+        "Behaviour":"Ask a question over the mic in front of 100 people.",
+        "rating":"90"
+    },
+    {
+        "Behaviour":"Introducing myself on stage over the mic in front of 100 people.",
+        "rating":"100"
+    }
+]
