@@ -22,7 +22,7 @@ export default function Home() {
           <div className="col-span-3 min-w-[100px] border border-black bg-red-400 py-1 px-4 text-black rounded-lg">
             {index + 1}
           </div>
-          <div  className="col-span-6 min-w-[500px] border border-black bg-orange-900 py-1 px-4 rounded-lg">
+          <div  className="col-span-6 min-w-[500px] border border-black bg-red-400 py-1 px-4 rounded-lg">
             {item.activity}
           </div>
           <div className="col-span-3 w-full border text-black border-black bg-red-400 py-1 px-4 rounded-lg">
