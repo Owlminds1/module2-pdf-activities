@@ -1,17 +1,37 @@
-import NavbarData from "@/lib/navigation/nav.json"
+import NavbarData from "@/lib/navigation/nav.json";
 import Link from "next/link";
 export default function Home() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[url(/bg/bg_image.jpg)] bg-cover bg-center p-5">
-      <div className="flex items-center justify-center gap-5">
+    <div className="min-h-screen flex flex-col gap-4 items-center justify-start  bg-[url(/bg/bg_image.jpg)] bg-cover bg-center p-5">
+      <h5 className="text-[50px] py-5 text-red-600">Module2 Pdf Activities</h5>
+      <div className="grid grid-cols-12 gap-4 min-w-[500px] place-items-center text-center">
+        <div className="col-span-3 min-w-[100px] font-bold border border-black bg-purple-500 py-1 px-4 rounded-lg">
+          Sr. no.
+        </div>
+        <div className="col-span-6 min-w-[500px] font-bold border border-black bg-purple-500 py-1 px-4 rounded-lg">
+          Activity Name
+        </div>
+        <div className="col-span-3 w-full border font-bold  border-black bg-purple-500 py-1 px-4 rounded-lg">
+          Activity Link
+        </div>
+      </div>
+
       {
         NavbarData.map((item,index)=>(
-
-            <Link key={index} className="text-black bg-red-400 py-2 px-5 rounded-lg" href={`/${item.link}`}>{item.link}</Link>
-
+          <div key={index} className="grid grid-cols-12 gap-4 min-w-[500px] place-items-center text-center">
+          <div className="col-span-3 min-w-[100px] border border-black bg-red-400 py-1 px-4 text-black rounded-lg">
+            {index + 1}
+          </div>
+          <div  className="col-span-6 min-w-[500px] border border-black bg-orange-900 py-1 px-4 rounded-lg">
+            {item.activity}
+          </div>
+          <div className="col-span-3 w-full border text-black border-black bg-red-400 py-1 px-4 rounded-lg">
+          <Link  href={`/${item.link}`}>{item.link}</Link>
+          </div>
+        </div>
         ))
       }
-      </div>
+     
     </div>
   );
 }

@@ -1,26 +1,39 @@
 
 [
     {
-        "link":"C10L1A2"
+        "link":"C10L1A2",
+        "activity":"Think of a difficult situation (anxious)"
     },
     {
-        "link":"C10L2A3"
+        "link":"C10L2A3",
+        "activity":"Describe the situation."
     },
     {
-        "link":"C10L3A2"
+        "link":"C10L3A2",
+        "activity":"Think of a difficult situation (nervous or scared.)"
+
     },{
-        "link":"C12-L1-A1"
+        "link":"C12-L1-A1",
+        "activity":"Complete the sentence"
+
     },
     {
-        "link":"C12-L2-A2"
+        "link":"C12-L2-A2",
+        "activity":"Create a script to advertise yourself."
+
     },
     {
-        "link":"C12-L3-A4"
+        "link":"C12-L3-A4",
+        "activity":"magine the best possible..."
     },
     {
-        "link":"C10-L1-A4"
+        "link":"C10-L1-A4",
+        "activity":"What makes you feel brave?"
+
     },
     {
-        "link":"C10-L1-A5"
+        "link":"C10-L1-A5",
+        "activity":"Think deeply about what you like..."
+
     }
 ]
