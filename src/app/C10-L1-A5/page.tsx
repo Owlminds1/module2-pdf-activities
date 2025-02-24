@@ -54,122 +54,118 @@ const Page = () => {
     doc.save("video-advertisement-script.pdf");
   };
   return (
-    <div className="min-h-screen bg-slate-400 flex justify-center items-center">
-      <div className="grid grid-cols-12 w-full p-5  ">
-        <div className="col-span-8 w-full  flex items-center justify-center  ">
-          <div className="w-[600px] h-[600px] relative bg-[url(/bg/flowerBg.jpg)] bg-cover bg-center rounded-lg shadow-2xl">
+    <div className="min-h-screen bg-slate-400 flex flex-col p-5 justify-center items-center">
+      <h2 className="text-4xl pb-[50px] text-white">Self talk flower</h2>
+      <div className="grid grid-cols-12 w-full p-5  place-items-center  ">
+        <div className="col-span-8 bg-[url(/bg/bg_flower.jpg)] rounded-2xl  bg-cover bg-center">
+          <div className="w-[700px] h-[700px] relative )] bg-cover bg-center rounded-lg ">
             <Image src="/images/flower.png" layout="fill" alt="jar image" />
 
             <form
               onSubmit={handleSubmit(onSubmit)}
-              className="absolute  w-[400px] h-[400px] rounded-full top-[-20px] right-[120px] flex flex-col justify-center items-center gap-4 px-5"
+              className="absolute  w-[500px] h-[500px]  rounded-full top-[-20px] right-[150px] flex flex-col justify-center items-center gap-4 px-5"
             >
-             <div className="absolute  top-[50px] left-[110px]">
-             <Controller
-                control={control}
-                name="first"
-                render={({ field }) => (
-                  <input
-                    title="inputs"
-                    placeholder="Enter Something.. "
-                    type="text"
-                    className=" bg-gradient-to-r from-white to-red-500 w-[120px] min-h-[80px] rounded-[50px] px-2 bg-transparent backdrop-blur-sm text-black outline-none placeholder:text-black  border-black "
-                    {...field}
-                  />
-                )}
+              <div className="absolute  top-[28px] left-[162px] first_leaf">
+                <Controller
+                  control={control}
+                  name="first"
+                  render={({ field }) => (
+                    <textarea
+                      title="textareas"
+                      placeholder="Write here."
+                     className=" bg-gradient-to-r from-white to-red-500 w-[160px] min-h-[140px] rounded-[60px] px-2 py-10 bg-transparent backdrop-blur-sm text-black outline-none placeholder:text-slate-800 border border-black placeholder:text-md placeholder:text-center "
+                      {...field}
+                    />
+                  )}
+                />
+              </div>
+
+              <div className="absolute  top-[82px] right-[20px] sec_leaf">
+                <Controller
+                  control={control}
+                  name="sec"
+                  render={({ field }) => (
+                    <textarea
+                      title="textareas"
+                      placeholder="Write here."
+                     className=" bg-gradient-to-r from-white to-red-500 w-[160px] min-h-[140px] rounded-[60px] px-2 py-10 bg-transparent backdrop-blur-sm text-black outline-none placeholder:text-slate-800 border border-black placeholder:text-md placeholder:text-center "
+                      {...field}
+                    />
+                  )}
+                />
+              </div>
+
+              <div className="absolute  top-[238px] right-[15px] third_leaf ">
+                <Controller
+                  control={control}
+                  name="third"
+                  render={({ field }) => (
+                    <textarea
+                      title="textareas"
+                      placeholder="Write here."
+                       className=" bg-gradient-to-r from-white to-red-500 w-[160px] min-h-[140px] rounded-[60px] px-2 py-10 bg-transparent backdrop-blur-sm text-black outline-none placeholder:text-slate-800 border border-black placeholder:text-md placeholder:text-center "
+                      {...field}
+                    />
+                  )}
+                />
+              </div>
+
+              <div className="absolute  bottom-[53px] left-[148px] four_leaf">
+                <Controller
+                  control={control}
+                  name="four"
+                  render={({ field }) => (
+                    <textarea
+                      title="textareas"
+                      placeholder="Write here."
+                      className=" bg-gradient-to-r from-white to-red-500 w-[160px] min-h-[140px] rounded-[60px] px-2 py-10 bg-transparent backdrop-blur-sm text-black outline-none placeholder:text-slate-800 border border-black placeholder:text-md placeholder:text-center "
+                      {...field}
+                    />
+                  )}
+                />
+              </div>
+
+              <div className="absolute  bottom-[200px] left-[55px] five_leaf">
+                <Controller
+                  control={control}
+                  name="five"
+                  render={({ field }) => (
+                    <textarea
+                      title="textareas"
+                      placeholder="Write here."
+                      className=" bg-gradient-to-r from-white to-red-500 w-[160px] min-h-[140px] rounded-[60px] px-2 py-10 bg-transparent backdrop-blur-sm text-black outline-none placeholder:text-slate-800 border border-black placeholder:text-md placeholder:text-center "
+                      {...field}
+                    />
+                  )}
+                />
+              </div>
+
+              <textarea
+                placeholder="write Name."
+                className=" px-2 py-10 w-[120px] h-[120px]   rounded-full border  absolute top-[48%] left-[278px] translate-x-[-50%] translate-y-[-50%] border-white text-white bg-black placeholder:text-center hover:border-black hover:backdrop-blur-lg placeholder:text-sm"
               />
-             </div>
 
-
-             <div className="absolute  top-[100px] right-[20px]">
-             <Controller
-                control={control}
-                name="sec"
-                render={({ field }) => (
-                  <input
-                    title="inputs"
-                    placeholder="Enter Something.. "
-                    type="text"
-                     className=" bg-gradient-to-r from-white to-red-500 w-[120px] min-h-[80px] rounded-[50px] px-2 bg-transparent backdrop-blur-sm text-black outline-none placeholder:text-black  border-black "
-                    {...field}
-                  />
-                )}
-              />
-             </div>
-
-             <div className="absolute  top-[220px] right-[15px]">
-             <Controller
-                control={control}
-                name="third"
-                render={({ field }) => (
-                  <input
-                    title="inputs"
-                    placeholder="Enter Something.. "
-                    type="text"
-                      className=" bg-gradient-to-r from-white to-red-500 w-[120px] min-h-[80px] rounded-[50px] px-2 bg-transparent backdrop-blur-sm text-black outline-none placeholder:text-black  border-black "
-                    {...field}
-                  />
-                )}
-              />
-             </div>
-
-             <div className="absolute  bottom-[40px] left-[100px]">
-             <Controller
-                control={control}
-                name="four"
-                render={({ field }) => (
-                  <input
-                    title="inputs"
-                    placeholder="Enter Something.. "
-                    type="text"
-                     className=" bg-gradient-to-r from-white to-red-500 w-[120px] min-h-[80px] rounded-[50px] px-2 bg-transparent backdrop-blur-sm text-black outline-none placeholder:text-black  border-black "
-                    {...field}
-                  />
-                )}
-              />
-             </div>
-
-             <div className="absolute  bottom-[160px] left-[8px]">
-             <Controller
-                control={control}
-                name="five"
-                render={({ field }) => (
-                  <input
-                    title="inputs"
-                    placeholder="Enter Something.. "
-                    type="text"
-                     className=" bg-gradient-to-r from-white to-red-500 w-[120px] min-h-[80px] rounded-[50px] px-2 bg-transparent backdrop-blur-sm text-black outline-none placeholder:text-black  border-black "
-                    {...field}
-                  />
-                )}
-              />
-             </div>
-
-              
-
-              <div className="absolute top-[53%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-                <button className=" px-2 w-[70px] h-[70px] py-1 rounded-full border border-white text-white bg-black hover:bg-red-200 hover:text-black hover:border-black hover:backdrop-blur-lg">
-                  submit
-                </button>
-              </div> 
+              <button className="absolute bottom-[-100px]  right-[120px] bg-green-500  border border-green-900 px-10 py-3 rounded-lg hover:bg-green-600">Submit</button>
             </form>
           </div>
         </div>
-        <div className="col-span-4 w-full  place-content-center">
-          <div className=" px-8 bg-white  rounded-lg shadow-lg py-2 ">
-            {/* <h3 className="text-2xl font-bold text-center text-black">
-              What makes you feel brave?
-            </h3> */}
-            <p className="text-lg text-black">
-            Think deeply about what you like about yourself. Focus on your qualities or behaviour towards oneself as well as others. For example, if you help your friends, you can write, ‘I’m helpful’. If you keep your things in their proper place and tidy up, you could write ‘organised.’
-            </p>
+        <div className="col-span-4 w-full bg-[#F37979] p-4 min-h-[300px] flex justify-center items-center shadow-lg rounded-lg ">
+          <div>
+           <ul className="list-decimal pl-5 space-y-2 text-lg">
+  <li>Write on each petal a positive thought about yourself.</li>
+  <li>Think about what you like about yourself.</li>
+  <li>
+    Focus on your qualities or behaviour towards oneself as well as others. 
+    For example, if you help your friends, you can write, <strong>‘I’m helpful’</strong>. 
+    If you keep your things in their proper place and tidy up, you could write <strong>‘organised’</strong>.
+  </li>
+</ul>
 
-            <p className="text-lg py-2 text-black">
-            Write on each petal a positive thought about yourself
+
+            <p className="text-lg py-5 text-white">
+              Write on each petal a positive thought about yourself
             </p>
           </div>
-
-        
         </div>
       </div>
     </div>

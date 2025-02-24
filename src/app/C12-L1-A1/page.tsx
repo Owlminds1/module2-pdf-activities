@@ -35,7 +35,12 @@ const Page = () => {
       const wrappedAnswer = doc.splitTextToSize(value || "N/A", maxWidth);
 
       // Check if text exceeds page limit
-      if (yPosition + wrappedLabel.length * lineSpacing + wrappedAnswer.length * lineSpacing > 280) {
+      if (
+        yPosition +
+          wrappedLabel.length * lineSpacing +
+          wrappedAnswer.length * lineSpacing >
+        280
+      ) {
         doc.addPage();
         yPosition = 30; // Reset Y position for new page
       }
@@ -60,94 +65,121 @@ const Page = () => {
   };
 
   return (
-    <div className="bg-slate-500 min-h-screen text-black flex flex-col justify-center items-center">
-      <h3 className="text-white text-2xl font-bold py-3">Complete the sentence</h3>
+    <div className="bg-slate-400 p-5 min-h-screen text-black flex flex-col justify-center items-center">
+      <h3 className="text-white text-2xl font-bold py-5 pb-[30px]">
+        Complete the sentence
+      </h3>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex justify-center items-center flex-col gap-8 bg-gray-300 shadow-lg p-5 py-8 rounded-lg"
+        className="flex justify-center items-center flex-col gap-8 bg-[#D1D5DB] shadow-lg p-5 py-8 rounded-lg"
       >
-        <label className="w-[500px] text-lg" htmlFor="first">
-          I have been told, I have pretty
-          <Controller
-            name="first"
-            control={control}
-            render={({ field }) => (
-              <input
-                type="text"
-                id="first"
-                className="bg-transparent text-white border-b border-black outline-none px-5"
-                {...field}
+        <ul className="list-disc space-y-8 p-4">
+          <li>
+            {" "}
+            <label
+              className="w-[500px] flex items-center gap-1 text-lg"
+              htmlFor="first"
+            >
+              I have been told, I have pretty
+              <Controller
+                name="first"
+                control={control}
+                render={({ field }) => (
+                  <textarea
+                    id="first"
+                    className="bg-transparent text-white border-b border-black outline-none px-5"
+                    {...field}
+                  />
+                )}
               />
-            )}
-          />
-        </label>
+            </label>
+          </li>
 
-        <label htmlFor="sec" className="w-[500px] text-lg">
-          I’m loved by
-          <Controller
-            name="sec"
-            control={control}
-            render={({ field }) => (
-              <input
-                type="text"
-                id="sec"
-                className="bg-transparent text-white border-b border-black outline-none px-5"
-                {...field}
+          <li>
+            <label
+              htmlFor="sec"
+              className="w-[500px] flex items-center gap-1 text-lg"
+            >
+              I’m loved by
+              <Controller
+                name="sec"
+                control={control}
+                render={({ field }) => (
+                  <textarea
+                    id="sec"
+                    className="bg-transparent text-white border-b border-black outline-none px-5"
+                    {...field}
+                  />
+                )}
               />
-            )}
-          />
-        </label>
+            </label>
+          </li>
 
-        <label htmlFor="third" className="w-[500px] text-lg">
-          I’m good at
-          <Controller
-            name="third"
-            control={control}
-            render={({ field }) => (
-              <input
-                type="text"
-                id="third"
-                className="bg-transparent text-white border-b border-black outline-none px-5"
-                {...field}
+          <li>
+            {" "}
+            <label
+              htmlFor="third"
+              className="w-[500px] flex items-center gap-1 text-lg"
+            >
+              I’m good at
+              <Controller
+                name="third"
+                control={control}
+                render={({ field }) => (
+                  <textarea
+                    id="third"
+                    className="bg-transparent text-white border-b border-black outline-none px-5"
+                    {...field}
+                  />
+                )}
               />
-            )}
-          />
-        </label>
+            </label>
+          </li>
 
-        <label htmlFor="four" className="w-[500px] text-lg">
-          I’ve so much fun when
-          <Controller
-            name="four"
-            control={control}
-            render={({ field }) => (
-              <input
-                type="text"
-                id="four"
-                className="bg-transparent text-white border-b border-black outline-none px-5"
-                {...field}
+          <li>
+            {" "}
+            <label
+              htmlFor="four"
+              className="w-[500px] flex items-center gap-1 text-lg"
+            >
+              I’ve so much fun when
+              <Controller
+                name="four"
+                control={control}
+                render={({ field }) => (
+                  <textarea
+                    id="four"
+                    className="bg-transparent text-white border-b border-black outline-none px-5"
+                    {...field}
+                  />
+                )}
               />
-            )}
-          />
-        </label>
+            </label>
+          </li>
 
-        <label htmlFor="five" className="w-[500px] text-lg">
-          I’m proud of myself because
-          <Controller
-            name="five"
-            control={control}
-            render={({ field }) => (
-              <input
-                type="text"
-                id="five"
-                className="bg-transparent text-white border-b border-black outline-none px-5"
-                {...field}
+          <li>
+            <label
+              htmlFor="five"
+              className="w-[500px] flex items-center gap-1 text-lg"
+            >
+              I’m proud of myself because
+              <Controller
+                name="five"
+                control={control}
+                render={({ field }) => (
+                  <textarea
+                    id="five"
+                    className="bg-transparent text-white border-b border-black outline-none px-5"
+                    {...field}
+                  />
+                )}
               />
-            )}
-          />
-        </label>
+            </label>
+          </li>
+        </ul>
 
         <div>
-          <button className="bg-green-500 px-5 py-2 rounded-lg text-white">
+          <button className="bg-green-500 hover:bg-green-600 px-5 py-2 rounded-lg text-white">
             Submit My Response
           </button>
         </div>

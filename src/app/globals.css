@@ -19,3 +19,16 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.first_leaf{
+  transform: rotate(-10deg);
+}.sec_leaf{
+  transform: rotate(-25deg);
+}.third_leaf{
+  transform: rotate(5deg);
+}.four_leaf{
+  transform: rotate(10deg);
+}.five_leaf{
+  transform: rotate(-0deg);
+}

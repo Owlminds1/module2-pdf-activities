@@ -24,7 +24,7 @@ const Page = () => {
 
     // ✅ Title ko center align karna
     const title =
-      "Think of a difficult situation, that makes you anxious where you worry that something might go wrong. Tell me about it";
+      "Think of a difficult situation that makes you anxious or worried";
     const titleLines = doc.splitTextToSize(title, contentWidth);
     const titleHeight = titleLines.length * 6; // Calculate title height
 
@@ -122,18 +122,17 @@ const Page = () => {
   };
 
   return (
-    <div className=" min-h-screen w-full text-black bg-[#94A3B8]">
+    <div className=" min-h-screen w-full  bg-gray-200">
       <div className=" p-10 font-bold">
-        <h1 className="text-center text-[25px]">
-          Think of a difficult situation, that makes you anxious where you worry
-          that something might go wrong. Tell me about it
+        <h1 className="text-center text-[25px] text-[#B771E5]">
+        Think of a difficult situation that makes you anxious or worried
         </h1>
       </div>
-      <div className="  flex items-center justify-center mt-5 p-5 ">
-        <div className="bg-orange-400 shadow-xl text-black p-5 rounded-lg ">
+      <div className="  flex items-center justify-center mt-5 p-5 text-white ">
+        <div className="bg-[#B771E5] shadow-xl  p-5 rounded-lg ">
           <form onSubmit={handleSubmit(onSubmit)} className="min-w-[800px]">
-            <div className="flex flex-col text-black p-2 gap-2">
-              <label htmlFor="step_1">
+            <div className="flex flex-col  p-2 gap-2">
+              <label htmlFor="step_1" className="text-xl font-bold py-2">
                 Where are you when this happens? Who all are around you?{" "}
               </label>
               <Controller
@@ -145,14 +144,14 @@ const Page = () => {
                     {...field}
                     id="step_1"
                     placeholder="Type your answer here..."
-                    className="min-h-[60px] rounded-md p-2 border border-1 border-[#3DCCC7] focus:outline-[#3DCCC7] bg-white placeholder:text-slate-600"
+                    className="min-h-[60px] rounded-md p-2 border border-1 border-[#3DCCC7] focus:outline-[#3DCCC7] bg-white text-black placeholder:text-slate-400"
                   />
                 )}
               />
             </div>
             {/* ========================= checkbox ============================ */}
-            <div className="flex flex-col text-black p-2 gap-2">
-              <label htmlFor="step_2">Is it real or I imagine it?</label>
+            <div className="flex flex-col  p-2 gap-2">
+              <label htmlFor="step_2" className="text-xl font-bold py-2">Is it real or I imagine it?</label>
               <div className="flex gap-1 items-center px-5 py-3">
                 <Controller
                   control={control}
@@ -163,12 +162,11 @@ const Page = () => {
                       {...field}
                       id="step_2"
                       type="checkbox"
-                      placeholder="Type your answer here..."
-                      className="min-h-[25px] rounded-md p-2 border border-1 border-[#3DCCC7] focus:outline-[#3DCCC7] bg-white placeholder:text-slate-600"
+                      className="w-6 h-6 rounded-full mx-2 p-2 border border-1 border-[#3DCCC7] focus:outline-[#3DCCC7] bg-white placeholder:text-slate-600"
                     />
                   )}
                 />
-                <span className="text-sm">This has really happened OR </span>
+                <span className="text-lg" >This has really happened OR </span>
               </div>
 
               <div className="flex gap-1 items-center px-5 py-3">
@@ -181,17 +179,16 @@ const Page = () => {
                       {...field}
                       id="step_3"
                       type="checkbox"
-                      placeholder="Type your answer here..."
-                      className="min-h-[25px] rounded-md p-2 border border-1 border-[#3DCCC7] focus:outline-[#3DCCC7] bg-white placeholder:text-slate-600"
+                      className="w-6 h-6 rounded-full mx-2 p-2 border border-1 border-[#3DCCC7] focus:outline-[#3DCCC7] bg-white placeholder:text-slate-600"
                     />
                   )}
                 />
-                <span className="text-sm">I think might happen</span>
+                <span className="text-lg">I think might happen</span>
               </div>
             </div>
 
-            <div className="flex flex-col text-black p-2 gap-2">
-              <label htmlFor="step_4">
+            <div className="flex flex-col  p-2 gap-2">
+              <label htmlFor="step_4" className="text-xl font-bold py-2">
                 Is it possible to actually come true?
               </label>
               <div className="flex gap-1 items-center px-5 py-3">
@@ -205,11 +202,11 @@ const Page = () => {
                       id="step_4"
                       type="checkbox"
                       placeholder="Type your answer here..."
-                      className="min-h-[25px] rounded-md p-2 border border-1 border-[#3DCCC7] focus:outline-[#3DCCC7] bg-white placeholder:text-slate-600"
+                      className="w-6 h-6 rounded-full mx-2 p-2 border border-1 border-[#3DCCC7] focus:outline-[#3DCCC7] bg-white placeholder:text-slate-600"
                     />
                   )}
                 />
-                <span className="text-sm">Very Likely </span>
+                <span className="text-lg">Very Likely </span>
               </div>
 
               <div className="flex gap-1 items-center px-5 py-3">
@@ -223,17 +220,17 @@ const Page = () => {
                       id="step_5"
                       type="checkbox"
                       placeholder="Type your answer here..."
-                      className="min-h-[25px] rounded-md p-2 border border-1 border-[#3DCCC7] focus:outline-[#3DCCC7] bg-white placeholder:text-slate-600"
+                      className="w-6 h-6 rounded-full mx-2 p-2 border border-1 border-[#3DCCC7] focus:outline-[#3DCCC7] bg-white placeholder:text-slate-600"
                     />
                   )}
                 />
-                <span className="text-sm">Not likely</span>
+                <span className="text-lg">Not likely</span>
               </div>
             </div>
             {/* ========================= checkbox ============================ */}
 
-            <div className="flex flex-col text-black p-2 gap-2">
-              <label htmlFor="step_6">
+            <div className="flex flex-col  p-2 gap-2">
+              <label htmlFor="step_6" className="text-xl font-bold py-2">
                 What s the worst that can happen if it comes true?
               </label>
               <Controller
@@ -244,14 +241,15 @@ const Page = () => {
                   <textarea
                     {...field}
                     id="step_6"
+                  
                     placeholder="Type your answer here..."
-                    className="min-h-[60px] rounded-md p-2 border border-1 border-[#3DCCC7] focus:outline-[#3DCCC7] bg-white placeholder:text-slate-600"
+                    className="min-h-[60px] rounded-md p-2 border border-1 border-[#3DCCC7] focus:outline-[#3DCCC7] bg-white text-black placeholder:text-slate-400"
                   />
                 )}
               />
             </div>
-            <div className="flex flex-col text-black p-2 gap-2">
-              <label htmlFor="step_7">
+            <div className="flex flex-col  p-2 gap-2">
+              <label htmlFor="step_7" className="text-xl font-bold py-2">
                 Will it matter to me tomorrow or in future?
               </label>
               <div className="flex gap-1 items-center px-5 py-3">
@@ -265,11 +263,11 @@ const Page = () => {
                       id="step_7"
                       type="checkbox"
                       placeholder="Type your answer here..."
-                      className="min-h-[25px] rounded-md p-2 border border-1 border-[#3DCCC7] focus:outline-[#3DCCC7] bg-white placeholder:text-slate-600"
+                      className="w-6 h-6 rounded-full mx-2 p-2 border border-1 border-[#3DCCC7] focus:outline-[#3DCCC7] bg-white placeholder:text-slate-600"
                     />
                   )}
                 />
-                <span className="text-sm">Yes, very much</span>
+                <span className="text-lg">Yes, very much</span>
               </div>
 
               <div className="flex gap-1 items-center px-5 py-3">
@@ -282,17 +280,16 @@ const Page = () => {
                       {...field}
                       id="step_8"
                       type="checkbox"
-                      placeholder="Type your answer here..."
-                      className="min-h-[25px] rounded-md p-2 border border-1 border-[#3DCCC7] focus:outline-[#3DCCC7] bg-white placeholder:text-slate-600"
+                      className="w-6 h-6 rounded-full mx-2 p-2 border border-1 border-[#3DCCC7] focus:outline-[#3DCCC7] bg-white placeholder:text-slate-600"
                     />
                   )}
                 />
-                <span className="text-sm">Not much</span>
+                <span className="text-lg">Not much</span>
               </div>
             </div>
 
-            <div className="flex flex-col text-black p-2 gap-2">
-              <label htmlFor="step_9">
+            <div className="flex flex-col  p-2 gap-2">
+              <label htmlFor="step_9" className="text-xl font-bold py-2">
                 What can I do to handle the situation in a better way?
               </label>
               <Controller
@@ -304,14 +301,14 @@ const Page = () => {
                     {...field}
                     id="step_9"
                     placeholder="Type your answer here..."
-                    className="min-h-[60px] rounded-md p-2 border border-1 border-[#3DCCC7] focus:outline-[#3DCCC7] bg-white placeholder:text-slate-600"
+                    className="min-h-[60px] rounded-md p-2 border border-1 border-[#3DCCC7] focus:outline-[#3DCCC7] bg-white text-black placeholder:text-slate-600"
                   />
                 )}
               />
             </div>
 
             <div className="p-5">
-              <button className="bg-blue-800 rounded-lg p-2 text-white w-full hover:bg-blue-600 ">
+              <button className="bg-[#441752] rounded-lg p-2 text-white w-full hover:bg-[#69247C] ">
                 Print or Save as PDF
               </button>
             </div>

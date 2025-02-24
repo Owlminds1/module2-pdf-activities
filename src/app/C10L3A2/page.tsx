@@ -11,7 +11,7 @@ const questions = [
   },
   {
     keys: ["step_2", "step_3"],
-    question: "Is it real or do I imagine it?",
+    question: "Has this happened?",
     options: [
       { key: "step_2", label: "This has really happened" },
       { key: "step_3", label: "I think it might happen" },
@@ -147,21 +147,21 @@ const Page = () => {
   };
 
   return (
-    <div className="min-h-screen w-full text-black bg-[#94A3B8]">
+    <div className="min-h-screen w-full text-black bg-gray-400">
       <div className="p-10 font-bold">
         <h1 className="text-center text-[25px]">
           Think of a difficult situation in which you got nervous or scared.
         </h1>
       </div>
       <div className="flex items-center justify-center mt-5 p-5">
-        <div className="bg-[#FFEB3B] shadow-xl text-black p-5 rounded-lg">
+        <div className="bg-[#FFEB3B] shadow-xl text-black p-8 rounded-lg">
           <form onSubmit={handleSubmit(onsubmit)} className="min-w-[800px]">
             {questions.map(({ key, keys, question, options }, index) => {
               const fieldKey = key ?? keys?.join("_") ?? `question_${index}`;
 
               return (
                 <div key={fieldKey} className="mb-4">
-                  <label htmlFor={fieldKey} className="block font-bold">
+                  <label htmlFor={fieldKey} className="block font-bold text-xl py-2">
                     {question}
                   </label>
 
@@ -169,7 +169,7 @@ const Page = () => {
                     options.map(({ key, label }) => (
                       <label
                         key={key}
-                        className="flex gap-1 items-center px-5 py-3"
+                        className="flex gap-1 items-center px-5 py-3 "
                       >
                         <Controller
                           control={control}
@@ -180,11 +180,11 @@ const Page = () => {
                               {...field}
                               type="checkbox"
                               checked={field.value ?? false}
-                              className="min-h-[25px] rounded-md border border-[#3DCCC7] bg-white"
+                              className="w-6 h-6  rounded-md border border-[#3DCCC7] bg-white"
                             />
                           )}
                         />
-                        <span className="text-sm">{label}</span>
+                        <span className="text-md px-2">{label}</span>
                       </label>
                     ))
                   ) : (
