@@ -32,3 +32,9 @@ body {
 }.five_leaf{
   transform: rotate(-0deg);
 }
+
+
+
+.mirror_btn{
+  box-shadow: 2px 5px 5px black , inset 2px 2px 1px white;
+}
