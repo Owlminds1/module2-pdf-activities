@@ -87,7 +87,7 @@ const Page = () => {
                 render={({ field }) => (
                   <textarea
                     id="first"
-                    className="bg-transparent text-white border-b border-black outline-none px-5"
+                    className=" text-black bg-transparent  border-b border-black outline-none px-5"
                     {...field}
                   />
                 )}
@@ -107,7 +107,7 @@ const Page = () => {
                 render={({ field }) => (
                   <textarea
                     id="sec"
-                    className="bg-transparent text-white border-b border-black outline-none px-5"
+                    className=" text-black bg-transparent  border-b border-black outline-none px-5"
                     {...field}
                   />
                 )}
@@ -128,7 +128,7 @@ const Page = () => {
                 render={({ field }) => (
                   <textarea
                     id="third"
-                    className="bg-transparent text-white border-b border-black outline-none px-5"
+                    className=" text-black bg-transparent  border-b border-black outline-none px-5"
                     {...field}
                   />
                 )}
@@ -149,7 +149,7 @@ const Page = () => {
                 render={({ field }) => (
                   <textarea
                     id="four"
-                    className="bg-transparent text-white border-b border-black outline-none px-5"
+                    className=" text-black bg-transparent  border-b border-black outline-none px-5"
                     {...field}
                   />
                 )}
@@ -169,7 +169,7 @@ const Page = () => {
                 render={({ field }) => (
                   <textarea
                     id="five"
-                    className="bg-transparent text-white border-b border-black outline-none px-5"
+                    className=" text-black bg-transparent  border-b border-black outline-none px-5"
                     {...field}
                   />
                 )}
