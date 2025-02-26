@@ -144,7 +144,7 @@ const Page = () => {
             submit
           </button>
         </form>
-        <div className="col-span-5 bg-blue-600 p-5 text-xl flex flex-col gap-4 justify-center items-start text-left">
+        <div className="col-span-5 bg-blue-400 p-5 text-xl flex flex-col gap-4 justify-center items-start text-left">
           <p>
             {`Think deeply about what you like about yourself. Focus on your qualities or behaviour towards oneself as well as others. For example, if you help your friends, you can write, ‘I’m helpful’. If you keep your things in their proper place and tidy up, you could write ‘organised.’`}
           </p>
