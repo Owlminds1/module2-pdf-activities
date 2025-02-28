@@ -62,8 +62,8 @@ const Page = () => {
   };
 
   return (
-    <div className=" p-5 bg-slate-500 min-h-screen text-black flex flex-col justify-center items-center">
-      <h3 className="text-white text-2xl font-bold py-3 w-[700px] text-center">
+    <div className=" p-5 bg-[#F8FAFC] min-h-screen text-black flex flex-col justify-center items-center">
+      <h3 className="text-black text-2xl font-bold py-3 w-[700px] text-center">
       Imagine the best possible version of yourself in the future. 
 
       </h3>

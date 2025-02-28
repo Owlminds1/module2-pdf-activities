@@ -61,8 +61,8 @@ const Page = () => {
   };
 
   return (
-    <div className=" p-5 bg-slate-400 min-h-screen text-black flex flex-col justify-center items-center">
-      <h3 className="text-white text-2xl font-bold py-3 w-[700px] text-center">
+    <div className=" p-5 bg-[#F8FAFC] min-h-screen text-black flex flex-col justify-center items-center">
+      <h3 className="text-black text-2xl font-bold py-3 w-[700px] text-center">
         You want to be selected in the school team. Create a script to advertise
         yourself. Create a script for a 5 minute video advertisement for
         yourself.

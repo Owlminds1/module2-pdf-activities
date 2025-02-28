@@ -54,8 +54,8 @@ const Page = () => {
     doc.save("your-feeling.pdf");
   };
   return (
-    <div className="min-h-screen bg-slate-400 flex flex-col justify-center items-center p-5">
-      <h3 className="pb-[60px] text-3xl font-bold text-white">Recipe for a jar of being brave</h3>
+    <div className="min-h-screen bg-[#F8FAFC] flex flex-col justify-center items-center p-5">
+      <h3 className="pb-[60px] text-3xl font-bold text-black">Recipe for a jar of being brave</h3>
       <div className="grid grid-cols-12 w-full p-5">
         <div className="col-span-6 w-full  flex items-center justify-center">
           <div className="w-[450px] h-[600px] relative">

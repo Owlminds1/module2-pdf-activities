@@ -65,8 +65,8 @@ const Page = () => {
   };
 
   return (
-    <div className="bg-slate-400 p-5 min-h-screen text-black flex flex-col justify-center items-center">
-      <h3 className="text-white text-2xl font-bold py-5 pb-[30px]">
+    <div className="bg-[#F8FAFC] p-5 min-h-screen text-black flex flex-col justify-center items-center">
+      <h3 className="text-black text-2xl font-bold py-5 pb-[30px]">
         Complete the sentence
       </h3>
       <form

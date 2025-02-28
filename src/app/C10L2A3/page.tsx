@@ -56,7 +56,7 @@ const Page = () => {
   };
 
   return (
-    <div className="min-w-[800px] min-h-screen bg-slate-400 p-5">
+    <div className="min-w-[800px] min-h-screen bg-[#F8FAFC] p-5">
       <h3 className="text-center font-bold text-xl text-black">
         Step 1: Describe the situation.
       </h3>

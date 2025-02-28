@@ -122,7 +122,7 @@ const Page = () => {
   };
 
   return (
-    <div className=" min-h-screen w-full  bg-gray-200">
+    <div className=" min-h-screen w-full  bg-[#F8FAFC]">
       <div className=" p-10 font-bold">
         <h1 className="text-center text-[25px] text-[#B771E5]">
         Think of a difficult situation that makes you anxious or worried

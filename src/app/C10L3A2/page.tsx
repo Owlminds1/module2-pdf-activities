@@ -147,7 +147,7 @@ const Page = () => {
   };
 
   return (
-    <div className="min-h-screen w-full text-black bg-gray-400">
+    <div className="min-h-screen w-full text-black bg-[#F8FAFC]">
       <div className="p-10 font-bold">
         <h1 className="text-center text-[25px]">
           Think of a difficult situation in which you got nervous or scared.

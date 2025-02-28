@@ -54,8 +54,8 @@ const Page = () => {
     doc.save("video-advertisement-script.pdf");
   };
   return (
-    <div className="min-h-screen bg-slate-400 flex flex-col p-5 justify-center items-center">
-      <h2 className="text-4xl pb-[50px] text-white">Self talk flower</h2>
+    <div className="min-h-screen bg-[#F8FAFC] flex flex-col p-5 justify-center items-center">
+      <h2 className="text-4xl pb-[50px] text-black">Self talk flower</h2>
       <div className="grid grid-cols-12 w-full p-5  place-items-center  ">
         <div className="col-span-8 bg-[url(/bg/bg_flower.jpg)] rounded-2xl  bg-cover bg-center">
           <div className="w-[700px] h-[700px] relative )] bg-cover bg-center rounded-lg ">
