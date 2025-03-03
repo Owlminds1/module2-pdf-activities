@@ -57,12 +57,12 @@ const Page = () => {
   return (
     <div className="min-h-screen w-full bg-[#F8FAFC]">
       <div className="p-5 font-bold">
-        <h1 className="text-center text-[25px] text-blue-500">
+        <h1 className="text-center text-[25px] text-blue-400">
         Request your parents to get a new board game/book and make a strong case for it.
         </h1>
       </div>
       <div className="flex items-center justify-center mt-5 p-5 text-white">
-        <div className="bg-blue-500 shadow-xl p-5 rounded-lg">
+        <div className="bg-blue-400 shadow-xl p-5 rounded-lg">
           <form onSubmit={handleSubmit(onSubmit)} className="min-w-[800px]">
             {[
               { name: "step_1", label: "Why do you want it?" },
@@ -92,7 +92,7 @@ const Page = () => {
             ))}
 
             <div className="p-5">
-              <button className="bg-blue-800 rounded-lg p-2 text-white w-full hover:bg-blue-900">
+              <button className="bg-slate-700 rounded-lg p-2 text-white w-full ">
                 Print or Save as PDF
               </button>
             </div>
