@@ -87,7 +87,7 @@ export default function SlideThird({ formData,setIsFirstScreen,setFormData  }: S
             alt="image"
           />
         </div>
-        <div className="col-span-6 w-full h-full flex justify-center items-center gap-3 border rounded-lg">
+        <div className="col-span-6 w-full h-full flex justify-center  items-center gap-3 border rounded-lg">
           <form
             onSubmit={handleSubmit(generatePDF)}
             className="text-black flex flex-col gap-3 w-[500px] p-5"
@@ -128,10 +128,10 @@ export default function SlideThird({ formData,setIsFirstScreen,setFormData  }: S
               Save as PDF
             </button>
 
-            <button className={`${table ? "block":"hidden"} text-lg  bg-green-400 px-5 py-2 rounded-lg`} onClick={()=>setIsFirstScreen("table")}> Table</button>
           </form>
         </div>
       </div>
+            <button className={`${table ? "block":"hidden"} text-lg  bg-green-400 px-5 py-2 rounded-lg`} onClick={()=>setIsFirstScreen("table")}>Solution</button>
     </div>
   );
 }
