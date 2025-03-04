@@ -9,6 +9,7 @@ type formData = {
   secound: string;
   third: string;
   four: string;
+  five:string
 };
 
 
@@ -26,7 +27,7 @@ const Page = () => {
     doc.text(title, center, 20); // Title Center mein
   
     // Image Add (Center mein)
-    const imgData = "/images/soda_shaker.jpg"; // Image Path
+    const imgData = "/images/school_image.jpg"; // Image Path
     const imgWidth = 40; // Image Width
     const imgHeight = 50; // Image Height
     const imgX = (pageWidth - imgWidth) / 2; // Image Center X Axis
@@ -55,10 +56,11 @@ const Page = () => {
     };
     doc.setFontSize(12);
     // Sab Fields ko Dynamically Add karna
-    addTextWithPageBreak("Understand the situation and describe the problem:", data.first);
-    addTextWithPageBreak("Name 3 ways you could solve the problem:", data.secound);
-    addTextWithPageBreak("What negative things could happen?:", data.third);
-    addTextWithPageBreak("What positive things can happen?:", data.four);
+    addTextWithPageBreak("Situation - Understand the situation and describe the problem.", data.first);
+    addTextWithPageBreak("Options - Name 3 ways you could solve the problem.", data.secound);
+    addTextWithPageBreak("Disadvantages - What negative things could happen?:", data.third);
+    addTextWithPageBreak("Advantages - What positive things can happen?:", data.four);
+    addTextWithPageBreak("Shake on it and attempt a solution - Mix multiple options to arrive at the final solution.:", data.five);
   
     // Page Numbers Add karna
 
@@ -131,18 +133,18 @@ const Page = () => {
             Grandpas want to go fishing. The sister wants to play board games,
             while brothers want to have a game of soccer.
           </h3>
-          <div className=" shadow-md w-full flex justify-center items-center ">
+          <div className=" relative h-[400px] shadow-md w-full flex justify-center items-center ">
             <Image
-              src="/images/soda_shaker.jpg"
-              width={200}
-              height={100}
+              src="/images/school_image.jpg"
+            fill
               alt="soda shaker"
+              className="object-cover object-center"
             />
           </div>
 
-          <div className="flex flex-col w-full min-h-[150px] p-3 bg-red-400 rounded-lg ">
+          <div className="flex flex-col w-full min-h-[150px] p-3 bg-blue-300 rounded-lg ">
             <label htmlFor="first" className="text-2xl text-black py-2">
-              Understand the situation and describe the problem.
+            Situation - Understand the situation and describe the problem.
             </label>
             <Controller
               control={control}
@@ -160,7 +162,7 @@ const Page = () => {
 
           <div className="flex flex-col w-full min-h-[150px] p-3 bg-yellow-300 rounded-lg">
             <label htmlFor="secound" className="text-2xl text-black py-2">
-              Name 3 ways you could solve the problem.
+            Options - Name 3 ways you could solve the problem.
             </label>
             <Controller
               control={control}
@@ -176,9 +178,9 @@ const Page = () => {
             />
           </div>
 
-          <div className="flex flex-col w-full min-h-[150px] p-3 bg-red-400 rounded-lg">
+          <div className="flex flex-col w-full min-h-[150px] p-3 bg-blue-300 rounded-lg">
             <label htmlFor="third" className="text-2xl text-black py-2">
-              What negative things could happen?
+            Disadvantages - What negative things could happen?
             </label>
             <Controller
               control={control}
@@ -195,7 +197,7 @@ const Page = () => {
           </div>
           <div className="flex flex-col w-full min-h-[150px] p-3 bg-yellow-300 rounded-lg">
             <label htmlFor="four" className="text-2xl text-black py-2">
-              What positive things can happen?
+            Advantages - What positive things can happen?
             </label>
             <Controller
               control={control}
@@ -211,7 +213,25 @@ const Page = () => {
             />
           </div>
 
-          <button className="bg-red-600 w-full py-2 rounded-lg text-white">
+          <div className="flex flex-col w-full min-h-[150px] p-3 bg-blue-300 rounded-lg">
+            <label htmlFor="five" className="text-2xl text-black py-2">
+            Shake on it and attempt a solution - Mix multiple options to arrive at the final solution.
+            </label>
+            <Controller
+              control={control}
+              name="five"
+              render={({ field }) => (
+                <textarea
+                  id="five"
+                  className="border border-black  rounded-lg p-2"
+                  placeholder="Enter your thought"
+                  {...field}
+                />
+              )}
+            />
+          </div>
+
+          <button className="bg-violet-600 w-full py-2 rounded-lg text-white">
             Save as PDF
           </button>
         </form>

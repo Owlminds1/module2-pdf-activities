@@ -12,9 +12,9 @@ type formData = {
 };
 
 type myProps = {
-  setIsFirstScreen:(value :string)=>void
-}
-export default function SlideFirst({setIsFirstScreen}:myProps) {
+  setIsFirstScreen: (value: string) => void;
+};
+export default function SlideFirst({ setIsFirstScreen }: myProps) {
   const { control, handleSubmit } = useForm<formData>();
 
   const onSubmit = (data: formData) => {
@@ -63,7 +63,7 @@ export default function SlideFirst({setIsFirstScreen}:myProps) {
   };
   return (
     <div className="bg-white min-h-screen flex items-center flex-col gap-8 justify-center p-5 ">
-          <h3 className="text-4xl text-black min-h-[70px]">School Helper</h3>
+      <h3 className="text-4xl text-black min-h-[70px]">School Helper</h3>
       <div className="grid grid-cols-12 w-full place-items-center ">
         <div className="col-span-6">
           <Image
@@ -76,47 +76,59 @@ export default function SlideFirst({setIsFirstScreen}:myProps) {
         <div className="col-span-6 w-full h-full flex justify-center items-center gap-3 border rounded-lg">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="text-black flex justify-center items-center gap-3 flex-col w-full p-5 "
+            className="text-black flex justify-center  gap-3 flex-col w-[500px] p-5 "
           >
-            <Controller
-              control={control}
-              name="first"
-              render={({ field }) => (
-                <textarea
-                  id="first"
-                  className="min-w-[400px] rounded-lg p-3  border border-black"
-                  placeholder="Alternate solutions"
-                  {...field}
-                />
-              )}
-            />
-            <Controller
-              control={control}
-              name="secound"
-              render={({ field }) => (
-                <textarea
-                  id="secound"
-                  className="min-w-[400px] rounded-lg p-3  border border-black"
-                  placeholder="Plan of Action"
-                  {...field}
-                />
-              )}
-            />
+            <div>
+              {" "}
+              <label className="text-left text-xl" htmlFor="first">
+                Alternate solutions
+              </label>
+              <Controller
+                control={control}
+                name="first"
+                render={({ field }) => (
+                  <textarea
+                    id="first"
+                    className="w-full rounded-lg p-3  border border-black"
+                    {...field}
+                  />
+                )}
+              />
+            </div>
+            <div>
+              <label className="text-left text-xl" htmlFor="first">
+                Plan of Action
+              </label>
+              <Controller
+                control={control}
+                name="secound"
+                render={({ field }) => (
+                  <textarea
+                    id="secound"
+                    className="w-full rounded-lg p-3  border border-black"
+                    {...field}
+                  />
+                )}
+              />
+            </div>
 
-            <button className="bg-red-500 rounded-lg px-5 py-2 ">
-              Save as PDF
-            </button>
+            <div className="text-center ">
+              {" "}
+              <button className="bg-violet-600 w-full rounded-lg px-5 py-2 text-white ">
+                Save as PDF
+              </button>
+            </div>
           </form>
         </div>
       </div>
       <div className="border z-20 border-black rounded-lg px-8 py-1 shadow shadow-[#000000b9] bg-yellow-400 hover:scale-90">
-      <h3
-        className="text-[30px]  cursor-pointer text-black"
-        onClick={() => setIsFirstScreen("secound")}
-      >
-        <FaArrowRight/>
-      </h3>
-    </div>
+        <h3
+          className="text-[30px]  cursor-pointer text-black"
+          onClick={() => setIsFirstScreen("secound")}
+        >
+          <FaArrowRight />
+        </h3>
+      </div>
     </div>
   );
 }

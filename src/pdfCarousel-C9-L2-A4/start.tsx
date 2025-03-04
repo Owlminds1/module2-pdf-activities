@@ -1,4 +1,4 @@
-import Image from 'next/image'
+
 import React from 'react'
 
 type myProps ={
@@ -9,16 +9,9 @@ const Start = ({setIsFirstScreen}:myProps) => {
   return (
     <div className="min-h-screen p-5 bg-[#F8FAFC] flex flex-col gap-6 justify-start items-center">
     <h3 className="text-4xl text-black ">School Helper</h3>
-    <div className=" grid grid-cols-12 p-2 w-full place-items-center shadow-black   rounded-lg ">
-      <div className="col-span-6">
-        <Image
-          src="/images/school_image.jpg"
-          width={400}
-          height={100}
-          alt="soda shaker"
-        />
-      </div>
-      <div className="col-span-6 w-full p-3 text-black">
+    <div className=" p-2 w-[700px] place-items-center shadow-black   rounded-lg ">
+    
+      <div className=" w-full p-3 text-black">
         <ul className="list-disc space-y-3 text-2xl text-black">
           <li>
             <strong>Identify the problem:</strong>What is the issue?

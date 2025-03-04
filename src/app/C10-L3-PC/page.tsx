@@ -9,9 +9,9 @@ type formData = {
 const Page = () => {
   const { control, handleSubmit } = useForm<formData>();
 
-  const onSubmit = (data:formData) => {
+  const onSubmit = (data: formData) => {
     const pdf = new jsPDF();
-
+  
     pdf.setFontSize(18);
     pdf.text(
       'Think about your strengths and talents. Imagine you’ve been given a magic wand, and you can change anything you want to change in yourself.',
@@ -19,20 +19,29 @@ const Page = () => {
       20,
       { maxWidth: 180, align: 'center' }
     );
-
+  
+    // Add Image
+    const img = "/images/magical_stick.jpg"; // Image Path (public folder or online URL)
+  
+    const imgWidth = 50; // Width of Image
+    const imgHeight = 50; // Height of Image
+  
+    // Center Align Image
+    const pageWidth = pdf.internal.pageSize.getWidth(); // PDF Page Width
+    const centerX = (pageWidth - imgWidth) / 2; // Center Image X Position
+  
+    // Add Image in PDF
+    pdf.addImage(img, 'PNG', centerX, 40, imgWidth, imgHeight);
+  
     pdf.setFontSize(15);
-    pdf.text(
-      'What would you want to be different?',
-      10,
-      50,
-      { maxWidth: 180 }
-    );
-
+    pdf.text('What would you want to be different?', 10, 100, { maxWidth: 180 });
+  
     pdf.setFontSize(12);
-    pdf.text(`Answer: ${data.first}`, 10, 65, { maxWidth: 180 });
-
+    pdf.text(`Answer: ${data.first}`, 10, 115, { maxWidth: 180 });
+  
     pdf.save('your_thoughts.pdf');
   };
+  
 
   return (
     <div className="min-h-screen bg-[#F8FAFC] text-center flex flex-col justify-start tems-center p-5 ">
