@@ -131,7 +131,7 @@ export default function SlideThird({ formData,setIsFirstScreen,setFormData  }: S
           </form>
         </div>
       </div>
-            <button className={`${table ? "block":"hidden"} text-lg  bg-green-400 px-5 py-2 rounded-lg`} onClick={()=>setIsFirstScreen("table")}>Solution</button>
+            <button className={`${table ? "block":"hidden"} text-lg  bg-green-500 px-5 py-2 rounded-lg`} onClick={()=>setIsFirstScreen("table")}>Solution</button>
     </div>
   );
 }
