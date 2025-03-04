@@ -144,7 +144,7 @@ const Page = () => {
 
           <div className="flex flex-col w-full min-h-[150px] p-3 bg-blue-300 rounded-lg ">
             <label htmlFor="first" className="text-2xl text-black py-2">
-            Situation - Understand the situation and describe the problem.
+            <strong>Situation -</strong> Understand the situation and describe the problem.
             </label>
             <Controller
               control={control}
@@ -162,7 +162,7 @@ const Page = () => {
 
           <div className="flex flex-col w-full min-h-[150px] p-3 bg-yellow-300 rounded-lg">
             <label htmlFor="secound" className="text-2xl text-black py-2">
-            Options - Name 3 ways you could solve the problem.
+          <strong>Options -</strong> Name 3 ways you could solve the problem.
             </label>
             <Controller
               control={control}
@@ -180,7 +180,7 @@ const Page = () => {
 
           <div className="flex flex-col w-full min-h-[150px] p-3 bg-blue-300 rounded-lg">
             <label htmlFor="third" className="text-2xl text-black py-2">
-            Disadvantages - What negative things could happen?
+           <strong> Disadvantages - </strong>What negative things could happen?
             </label>
             <Controller
               control={control}
@@ -197,7 +197,7 @@ const Page = () => {
           </div>
           <div className="flex flex-col w-full min-h-[150px] p-3 bg-yellow-300 rounded-lg">
             <label htmlFor="four" className="text-2xl text-black py-2">
-            Advantages - What positive things can happen?
+           <strong> Advantages -</strong> What positive things can happen?
             </label>
             <Controller
               control={control}
@@ -215,7 +215,7 @@ const Page = () => {
 
           <div className="flex flex-col w-full min-h-[150px] p-3 bg-blue-300 rounded-lg">
             <label htmlFor="five" className="text-2xl text-black py-2">
-            Shake on it and attempt a solution - Mix multiple options to arrive at the final solution.
+           <strong> Shake on it</strong> and attempt a solution - Mix multiple options to arrive at the final solution.
             </label>
             <Controller
               control={control}
