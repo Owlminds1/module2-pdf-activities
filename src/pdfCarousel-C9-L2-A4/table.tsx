@@ -7,10 +7,11 @@ const Data = [
     firstCol: "School Playground equipment is broken.",
     secCol: [
       {
-        a: "Alternative solutions",
+        
+        a: "Mark the broken equipment",
         b: "Mark the broken equipment",
-        c: "Mark the broken equipment",
-        d: "Urge the school authorities to get it fixed.",
+        c: "Urge the school authorities to get it fixed.",
+        d: ""
       },
     ],
     thirdCol: "Write a letter to the principal and urge for this to be fixed.",
@@ -46,7 +47,15 @@ const Data = [
 const Table = () => {
   return (
     <div className="min-h-screen bg-white text-black flex  flex-col justify-center items-center p-5">
+      <div className="grid grid-cols-12 w-full place-items-center text-center border border-black ">
+        <div className="col-span-6  w-full bg-blue-400">
+          <h4 className="text-3xl">Situation</h4>
+        </div>
+        <div className="col-span-3  w-full bg-blue-400">  <h4 className="text-3xl">Alternative Solutions</h4></div>
+        <div className="col-span-3  w-full bg-blue-400" > <h4 className="text-3xl">Plan of Action</h4></div>
+      </div>
       {Data.map((item, index) => (
+
         <div key={index} className="grid grid-cols-12 place-items-center p-5 border">
           <div className="col-span-3">
             <Image className="  rounded-lg" src={item.img} width={200} height={200} alt="" />
