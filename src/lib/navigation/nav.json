@@ -1,18 +1,59 @@
 
 [
+
     {
-        "link":"C10L1A2",
+        "link":"C9-L2-A3",
+        "activity":"soda shaker"
+
+    },
+    {
+        "link":"C9-L2-A4",
+        "activity":"School Helper"
+
+    },
+    {
+        "link":"C10-L1-A2",
         "activity":"Think of a difficult situation (anxious)"
     },
+
+     {
+        "link":"C10-L1-A4",
+        "activity":"What makes you feel brave?"
+
+    },
+
     {
-        "link":"C10L2A3",
-        "activity":"Describe the situation."
+        "link":"C10-L1-A5",
+        "activity":"Think deeply about what you like..."
+
     },
     {
-        "link":"C10L3A2",
+        "link":"C10-L2-A3",
+        "activity":"Describe the situation."
+    },
+
+    {
+        "link":"C10-L2-A5",
+        "activity":"Positive Self talk"
+
+    },
+    
+    {
+        "link":"C10-L3-A1",
+        "activity":"Think about a time when you felt anxious."
+
+    },
+    {
+        "link":"C10-L3-A2",
         "activity":"Think of a difficult situation (nervous or scared.)"
 
-    },{
+    },
+    {
+        "link":"C10-L3-PC",
+        "activity":"Know your thoughts"
+
+    },
+    {
         "link":"C12-L1-A1",
         "activity":"Complete the sentence"
 
@@ -23,47 +64,13 @@
 
     },
     {
-        "link":"C12-L3-A4",
-        "activity":"magine the best possible..."
-    },
-    {
-        "link":"C10-L1-A4",
-        "activity":"What makes you feel brave?"
-
-    },
-    {
-        "link":"C10-L1-A5",
-        "activity":"Think deeply about what you like..."
-
-    },{
-        "link":"C10-L3-A1",
-        "activity":"Think about a time when you felt anxious."
-
-    },
-    {
-        "link":"C10-L2-A5",
-        "activity":"Positive Self talk"
-
-    },
-     {
         "link":"C12-L2-A4B",
         "activity":"Request your parents to get a new board game/book..."
 
     },
     {
-        "link":"C10-L3-PC",
-        "activity":"Know your thoughts"
-
-    },
-    {
-        "link":"C9-L2-A3",
-        "activity":"soda shaker"
-
-    },
-    {
-        "link":"C9-L2-A4",
-        "activity":"School Helper"
-
+        "link":"C12-L3-A4",
+        "activity":"magine the best possible..."
     },
     {
         "link":"C15-L3-PCS",
