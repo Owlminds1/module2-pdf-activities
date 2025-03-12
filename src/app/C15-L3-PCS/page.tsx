@@ -16,7 +16,7 @@ const Page = () => {
 
   const onSubmit = (data: formData) => {
     const doc = new jsPDF();
-    const title = "Soda Shaker";
+    const title = "Story reading and Reflection";
     const pageWidth = doc.internal.pageSize.getWidth();
     const pageHeight = doc.internal.pageSize.getHeight();
     const textWidth = doc.getTextWidth(title);
