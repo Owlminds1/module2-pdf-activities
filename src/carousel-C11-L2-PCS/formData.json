@@ -1,0 +1,26 @@
+[
+    { "name": "first",
+     "label": "What is it called?",
+    "step":" Name Your AI"
+    },
+
+    { "name": "secound",
+     "label": "Why is this a problem? Who needs help?",
+    "step":" What Problem Does It Solve?"
+    }, 
+    
+    { "name": "third",
+     "label": "Describe how your AI invention would function.",
+    "step":"How Does It Work?"
+    },
+    
+    { "name": "four",
+     "label": "Who would benefit the most from this AI?",
+    "step":"Who Would Use It?"
+    },
+    
+    { "name": "five",
+     "label": "Draw your invention on paper or a computer, and put here!",
+    "step":" Design Your AI!"
+    }
+]
