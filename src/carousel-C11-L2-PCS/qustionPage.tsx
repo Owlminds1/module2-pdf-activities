@@ -1,6 +1,6 @@
 "use client";
 import jsPDF from "jspdf";
-import React from "react";
+import React, { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import FormDataJson  from "@/carousel-C11-L2-PCS/formData.json"
 import { FaLightbulb } from "react-icons/fa";
@@ -15,7 +15,25 @@ type formData = {
 };
 const QustionPage = () => {
   const { control, handleSubmit } = useForm<formData>();
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
+  const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+  
+    if (file) {
+      if (file.size > 1024 * 1024) { // 🔥 1MB = 1024 * 1024 bytes
+        alert("Image size must be 1MB or less.");
+        return; // ❌ Upload cancel
+      }
+  
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setSelectedImage(reader.result as string);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+  
   const onSubmit = (data: formData) => {
     const doc = new jsPDF();
     const title = "AI Explorer Challenge Journal";
@@ -92,11 +110,17 @@ const QustionPage = () => {
       data.four
     );
 
-    addTextWithPageBreak(
-      "Design Your AI!",
-      "Draw your invention on paper or a computer, and put here!",
-      data.five
-    );
+    if (selectedImage) {
+      doc.addPage();
+      doc.text("Step 5: Your AI Design!", 10, 20);
+      doc.addImage(selectedImage, "JPEG", 10, 30, 180, 100); // 🖼️ Image Add Karna
+    } else {
+      addTextWithPageBreak(
+        "Step 5: Design Your AI!",
+        "Draw your invention on paper or a computer, and put here!",
+        "No Image Provided"
+      );
+    }
 
     doc.save("AI-Explorer-Challenge-Journal.pdf");
   };
@@ -128,7 +152,17 @@ const QustionPage = () => {
             <label htmlFor={item.name} className="text-2xl text-black py-2">
               {item.label}
             </label>
-            <Controller
+           {
+            index == FormDataJson.length -1 ? (
+              <>
+              {/* 🖼️ Image Upload Input */}
+              <input type="file" accept="image/*" id={item.name} className=" rounded-lg p-2 min-h-[80px]" onChange={handleImageUpload} />
+              {/* {selectedImage && <img src={selectedImage} alt="Preview" className="w-32 h-32 mt-3" />} Image Preview */}
+            </>
+              
+            ):
+            (
+              <Controller
               control={control}
               name={item.name as keyof formData}
               render={({ field }) => (
@@ -140,6 +174,8 @@ const QustionPage = () => {
                 />
               )}
             />
+            )
+           }
           </div>
         ))}
 
