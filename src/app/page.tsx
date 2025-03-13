@@ -2,7 +2,7 @@ import NavbarData from "@/lib/navigation/nav.json";
 import Link from "next/link";
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col gap-4 items-center justify-start  bg-[url(/bg/bg_image.jpg)] bg-cover bg-center p-5">
+    <div className="min-h-screen flex flex-col gap-4 items-center justify-start  bg-[url(/bg/bg_image.jpg)] bg-cover bg-center bg-fixed p-5">
       <h5 className="text-[50px] py-5 text-red-600">Module2 Pdf Activities</h5>
       <div className="grid grid-cols-12 gap-4 min-w-[500px] place-items-center text-center">
         <div className="col-span-3 min-w-[100px] font-bold border border-black bg-purple-500 py-1 px-4 rounded-lg">
@@ -22,7 +22,7 @@ export default function Home() {
           <div className="col-span-3 min-w-[100px] border border-black bg-red-400 py-1 px-4 text-black rounded-lg">
             {index + 1}
           </div>
-          <div  className="col-span-6 min-w-[500px] border border-black bg-red-400 py-1 px-4 rounded-lg">
+          <div  className="col-span-6 min-w-[500px] border text-black border-black bg-red-400 py-1 px-4 rounded-lg">
             {item.activity}
           </div>
           <div className="col-span-3 w-full border text-black border-black bg-red-400 py-1 px-4 rounded-lg">

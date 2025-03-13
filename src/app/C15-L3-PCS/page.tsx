@@ -42,7 +42,6 @@ const Page = () => {
 
       y += 5; // Extra gap before suggestion
 
-      doc.setFont("helvetica", "italic"); // Suggestion ko italic me dikhane ke liye
       doc.text("Suggestive Response:", 10, y);
       y += 10;
 
@@ -64,31 +63,31 @@ const Page = () => {
 
     addTextWithPageBreak(
       "Question - How does failure help us become more determined?",
-      data.first,
+      `Student Response:${data.first}`,
       "When we fail, we learn about ourselves, the steps we took that led to failure, and the qualities we needed to incorporate. This helps us become more determined because we review the steps, exercise the qualities that help, and ensure success the next time."
     );
 
     addTextWithPageBreak(
       "Question -Why is it important to look forward to what we don’t know – the magical yet – in a positive way?",
-      data.secound,
+      `Student Response:${data.secound}`,
       "So much of our lives are about the unknown. There are many things that are yet to happen which are good for us but we don’t know about them in the present. Therefore it’s important to look forward to them in a way that makes us feel positive and elated."
     );
 
     addTextWithPageBreak(
       "Question - In what ways does making something that isn’t perfect teach us to make the most magnificent thing?",
-      data.third,
+      `Student Response:${data.third}`,
       "Everything we make has in it the ideas, strategies, hard work, and thought processes that we put in place. So when we do make the most magnificent thing, it will include all the wonderful ingredients of the preceding creations which is what makes it magnificent!"
     );
 
     addTextWithPageBreak(
       "Question - Why is it crucial to look at the utility of everything that we make? What kind of quality does it demonstrate?",
-      data.four,
+      `Student Response:${data.four}`,
       "Seeing the utility in every object we make shows us our own capabilities and levels of determination that helped us to keep going despite every object being imperfect. It shows us that we are determined and persevering, and that we are able to learn from every experience."
     );
 
     addTextWithPageBreak(
       "Question -What are some personal examples of when you made something that wasn’t perfect and yet it showed you the way to make the most magnificent thing?",
-      data.five,
+      `Student Response:${data.five}`,
       "Many times, the first version of what we make is not perfect, but it teaches us how to refine and improve it until we create something magnificent."
     );
 
