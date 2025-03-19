@@ -221,13 +221,14 @@ const Page = () => {
             submit
           </button>
         </form>
-        <div className="col-span-5 border bg-[#F8FCFA] p-5 text-xl flex flex-col gap-4 justify-center items-start text-left">
+        <div className="col-span-5 border bg-[#F8FCFA] p-5 text-xl flex flex-col gap-10 justify-start  items-start text-left">
+          <h3 className="text-black text-center w-full text-2xl font-bold">Select any seven qualities that define you</h3>
           <ul className="flex flex-wrap justify-center items-center  gap-2">
             {listData.map((i, index) => (
               <li
                 key={index}
                 style={{ border: `2px solid ${i.border}` }}
-                className="border text-black px-8 py-2 rounded-lg"
+                className="border text-[15px] text-black px-3 py-1 rounded-full"
               >
                 {i.name}
               </li>
