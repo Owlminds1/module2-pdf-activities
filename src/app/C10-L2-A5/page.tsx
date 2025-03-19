@@ -162,7 +162,7 @@ const Page = () => {
             )}
           />
 
-          <button className=" mirror_btn  absolute text-white  text-xl  bg-red-500  px-10 py-2  bottom-[80px] left-[40%] rounded-[20px]   placeholder:text-center placeholder:text-slate-600 focus:border-2 hover:bg-red-600 ">
+          <button className=" mirror_btn  absolute text-white  text-xl  bg-red-500  px-10 py-2  bottom-[10px] left-[41%] rounded-[20px]   placeholder:text-center placeholder:text-slate-600 focus:border-2 hover:bg-red-600 ">
             submit
           </button>
         </form>
