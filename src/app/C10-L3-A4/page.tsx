@@ -133,7 +133,7 @@ const Page = () => {
               <textarea
                 id="first"
                 className="absolute text-black text-center pl-2 pt-5 bg-[#ffffff6d] top-[85px] right-5 min-h-[80px] rounded-[20px] outline-none border border-black  placeholder:text-center placeholder:text-slate-600 focus:border-2 "
-                placeholder="Enter your Thought  "
+                placeholder="Enter the quality"
                 {...field}
               />
             )}
@@ -146,7 +146,7 @@ const Page = () => {
               <textarea
                 id="sec"
                 className="absolute text-black text-center pl-2 pt-5 bg-[#ffffff6d] top-[190px] right-5 min-h-[80px] rounded-[20px] outline-none border border-black  placeholder:text-center placeholder:text-slate-600 focus:border-2 "
-                placeholder="Enter your Thought  "
+                placeholder="Enter the quality"
                 {...field}
               />
             )}
@@ -159,7 +159,7 @@ const Page = () => {
               <textarea
                 id="third"
                 className="absolute text-black text-center pl-2 pt-5 bg-[#ffffff6d] top-[300px] right-5 min-h-[80px] rounded-[20px] outline-none border border-black  placeholder:text-center placeholder:text-slate-600 focus:border-2 "
-                placeholder="Enter your Thought  "
+                placeholder="Enter the quality"
                 {...field}
               />
             )}
@@ -172,7 +172,7 @@ const Page = () => {
               <textarea
                 id="four"
                 className="absolute text-black text-center pl-2 pt-5 bg-[#ffffff6d] top-[230px] left-3 min-h-[80px] rounded-[20px] outline-none border border-black  placeholder:text-center placeholder:text-slate-600 focus:border-2 "
-                placeholder="Enter your Thought  "
+                placeholder="Enter the quality"
                 {...field}
               />
             )}
@@ -185,7 +185,7 @@ const Page = () => {
               <textarea
                 id="five"
                 className="absolute text-black text-center pl-2 pt-5 bg-[#ffffff6d] top-[325px] left-3 min-h-[80px] rounded-[20px] outline-none border border-black  placeholder:text-center placeholder:text-slate-600 focus:border-2 "
-                placeholder="Enter your Thought  "
+                placeholder="Enter the quality"
                 {...field}
               />
             )}
@@ -198,7 +198,7 @@ const Page = () => {
               <textarea
                 id="six"
                 className="absolute text-black text-center pl-2 pt-5 bg-[#ffffff6d] top-[130px] left-3 min-h-[80px] rounded-[20px] outline-none border border-black  placeholder:text-center placeholder:text-slate-600 focus:border-2 "
-                placeholder="Enter your Thought  "
+                placeholder="Enter the quality"
                 {...field}
               />
             )}
@@ -211,7 +211,7 @@ const Page = () => {
               <textarea
                 id="seven"
                 className="absolute text-black text-center pl-2 pt-5 bg-[#ffffff6d] top-[30px] left-3 min-h-[80px] rounded-[20px] outline-none border border-black  placeholder:text-center placeholder:text-slate-600 focus:border-2 "
-                placeholder="Enter your Thought  "
+                placeholder="Enter the quality"
                 {...field}
               />
             )}
