@@ -145,7 +145,7 @@ Positive Self Talk With Examples      </h3>
               />
             )}
           />
-          <div className="absolute flex gap-0.5 flex-col justify-center items-center top-[65px] p-2 right-5 rounded-lg border border-black  "
+          <div className="absolute flex gap-0.5 flex-col justify-center items-center top-[30px] p-2 right-5 rounded-lg border border-black  "
 >
 <Controller
             name="first"
@@ -166,7 +166,7 @@ Positive Self Talk With Examples      </h3>
             render={({ field }) => (
               <textarea
                 id="first"
-                className=" text-black text-center h-[30px]  outline-none   placeholder:text-center placeholder:text-slate-600 bg-transparent"
+                className=" text-black text-center h-[60px]  outline-none   placeholder:text-center placeholder:text-slate-600 bg-transparent"
                 placeholder="Enter the example"
                 {...field}
               />
@@ -175,7 +175,7 @@ Positive Self Talk With Examples      </h3>
           </div>
           
 
-<div className="absolute flex-col justify-center items-center top-[175px] right-5 p-2 rounded-lg border border-black  ">
+<div className="absolute flex-col justify-center items-center top-[160px] right-5 p-2 rounded-lg border border-black  ">
 
           <Controller
             name="sec"
@@ -198,7 +198,7 @@ Positive Self Talk With Examples      </h3>
             render={({ field }) => (
               <textarea
                 id="sec"
-                 className=" text-black text-center h-[30px]  outline-none   placeholder:text-center placeholder:text-slate-600 bg-transparent"
+                 className=" text-black text-center h-[60px]  outline-none   placeholder:text-center placeholder:text-slate-600 bg-transparent"
                 placeholder="Enter the example"
                 {...field}
               />
@@ -230,7 +230,7 @@ Positive Self Talk With Examples      </h3>
             render={({ field }) => (
               <textarea
                 id="sec"
-                 className=" text-black text-center h-[30px]  outline-none   placeholder:text-center placeholder:text-slate-600 bg-transparent"
+                 className=" text-black text-center h-[60px]  outline-none   placeholder:text-center placeholder:text-slate-600 bg-transparent"
                 placeholder="Enter the example"
                 {...field}
               />
@@ -240,7 +240,7 @@ Positive Self Talk With Examples      </h3>
 
           
 {/* FOUR */}
-<div className="absolute flex gap-0.5 flex-col justify-center items-center top-[230px] left-3 p-2 rounded-lg border border-black bg-[#ffffff6d]">
+<div className="absolute flex gap-0.5 flex-col justify-center items-center top-[10px] left-3 p-2 rounded-lg border border-black bg-[#ffffff6d]">
   <Controller
     name="four"
     control={control}
@@ -260,7 +260,7 @@ Positive Self Talk With Examples      </h3>
     render={({ field }) => (
       <textarea
         id="example4"
-        className="text-black text-center h-[30px] outline-none placeholder:text-center placeholder:text-slate-600 bg-transparent"
+        className="text-black text-center h-[60px] outline-none placeholder:text-center placeholder:text-slate-600 bg-transparent"
         placeholder="Enter the example"
         {...field}
       />
@@ -269,7 +269,7 @@ Positive Self Talk With Examples      </h3>
 </div>
 
 {/* FIVE */}
-<div className="absolute flex gap-0.5 flex-col justify-center items-center top-[325px] left-3 p-2 rounded-lg border border-black bg-[#ffffff6d]">
+<div className="absolute flex gap-0.5 flex-col justify-center items-center top-[130px] left-3 p-2 rounded-lg border border-black bg-[#ffffff6d]">
   <Controller
     name="five"
     control={control}
@@ -289,7 +289,7 @@ Positive Self Talk With Examples      </h3>
     render={({ field }) => (
       <textarea
         id="example5"
-        className="text-black text-center h-[30px] outline-none placeholder:text-center placeholder:text-slate-600 bg-transparent"
+        className="text-black text-center h-[60px] outline-none placeholder:text-center placeholder:text-slate-600 bg-transparent"
         placeholder="Enter the example"
         {...field}
       />
@@ -298,7 +298,7 @@ Positive Self Talk With Examples      </h3>
 </div>
 
 {/* SIX */}
-<div className="absolute flex gap-0.5 flex-col justify-center items-center top-[130px] left-3 p-2 rounded-lg border border-black bg-[#ffffff6d]">
+<div className="absolute flex gap-0.5 flex-col justify-center items-center top-[250px] left-3 p-2 rounded-lg border border-black bg-[#ffffff6d]">
   <Controller
     name="six"
     control={control}
@@ -318,7 +318,7 @@ Positive Self Talk With Examples      </h3>
     render={({ field }) => (
       <textarea
         id="example6"
-        className="text-black text-center h-[30px] outline-none placeholder:text-center placeholder:text-slate-600 bg-transparent"
+        className="text-black text-center h-[60px] outline-none placeholder:text-center placeholder:text-slate-600 bg-transparent"
         placeholder="Enter the example"
         {...field}
       />
@@ -327,7 +327,7 @@ Positive Self Talk With Examples      </h3>
 </div>
 
 {/* SEVEN */}
-<div className="absolute flex gap-0.5 flex-col justify-center items-center top-[30px] left-3 p-2 rounded-lg border border-black bg-[#ffffff6d]">
+<div className="absolute flex gap-0.5 flex-col justify-center items-center top-[370px] left-3 p-2 rounded-lg border border-black bg-[#ffffff6d]">
   <Controller
     name="seven"
     control={control}
@@ -347,7 +347,7 @@ Positive Self Talk With Examples      </h3>
     render={({ field }) => (
       <textarea
         id="example7"
-        className="text-black text-center h-[30px] outline-none placeholder:text-center placeholder:text-slate-600 bg-transparent"
+        className="text-black text-center h-[60px] outline-none placeholder:text-center placeholder:text-slate-600 bg-transparent"
         placeholder="Enter the example"
         {...field}
       />
